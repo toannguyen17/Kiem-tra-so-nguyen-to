@@ -21,9 +21,9 @@ public class App {
             if(number == 2){
                 System.out.print(number + " là số nguyên tố.");
             }else{
-                double c50 = Math.ceil(number/2);
+                double cSQRT = Math.ceil(Math.sqrt(number));
                 boolean isSNT = true;
-                for(int i = 2; i <= c50; i++){
+                for(int i = 2; i <= cSQRT; i++){
                     if (number%i == 0) {
                         isSNT = false;
                     }
